@@ -7,9 +7,7 @@ t = "https://volki.auff/"
 q = "ssh://volki.auff/"
 
 def f(s):
-    f = re.match(r'^((https?|ssh|ftp)\://(([A-Za-z]+)\.)+([A-Za-z]+)/)$', s)
-#    f = re.match(r'^((https?|ssh|ftp)\://(([A-Za-z]+)\.)+([A-Za-z]+)/)$', s)
-    
+    f = re.match(r'^((https?|ssh|ftp)\://(([A-Za-z]+)\.)+([A-Za-z]+)/)$', s)    
     if f:
         print("%s is a URL" % s)
     else:
